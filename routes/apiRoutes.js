@@ -3,6 +3,7 @@ const db = "./../db/db.json";
 const fs = require("fs");
 
 
+
 router.get("/notes", (req, res) => {
     fs.readFile(db, "utf8", function (err, data) {
         if (err) throw err;
@@ -36,5 +37,6 @@ router.delete("/notes/:id", (req, res) => {
         //do stuff
 
     })
+});
 
-    module.exports = router;
+module.exports = router;

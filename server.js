@@ -16,5 +16,5 @@ app.use("/", htmlRoutes);
 app.use(express.static("public"));
 
 app.listen(PORT, function () {
-    console.log("app listening on port " + PORT)
+    console.log("app listening on port" + PORT)
 });
